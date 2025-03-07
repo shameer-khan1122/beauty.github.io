@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<style>
+  .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      display: flex;
+  }
+  .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 7s linear infinite;
+      color: hotpink;
+      font-size: 700%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border: 5px solid rgb(255, 6, 213);
+      border-radius: 15%;
+
+  }
+  @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+  }
+</style>
+
+<body>
+    <!-- nav start -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-2 d-fixed " href="#"><img src="assets/image/logo2.png" height="90px" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="hair.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hair
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="shampoo.html">Shampoos</a></li>
+                    <li><a class="dropdown-item" href="conditioner.html">Conditioners</a></li>
+                    <li><a class="dropdown-item" href="hairmask.html">Hair Masks</a></li>
+                    <li><a class="dropdown-item" href="serum.html">Serums</a></li>
+                    <li><a class="dropdown-item" href="hairoil.html">hair Oil</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="hair.html" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Skin care
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="lotion.html">Body Lotion</a></li>
+                    <li><a class="dropdown-item" href="facecream.html">Face Fresh Cream</a></li>
+                    <li><a class="dropdown-item" href="faceserum.html">Face Serums</a></li>
+                    <li><a class="dropdown-item" href="footcream.html">Best Hand and Foot Whitening Cream </a></li>
+                    <li><a class="dropdown-item" href="facescrub.html">Best Face Scrub</a></li>
+                  </ul>
+                </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="hair.html" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Nails Paint
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Mattepolish.html">Matte Nail Polish</a></li>
+                  <li><a class="dropdown-item" href="Glossypolish.html">Glossy Nail Polish</a></li>
+                  <li><a class="dropdown-item" href="Gelpolish.html">Gel Nail Polish</a></li>
+                  <li><a class="dropdown-item" href="Metallicpolish.html">Metallic Nail Polish</a></li>
+                  <li><a class="dropdown-item" href="Holographicpolish.html">Holographic Nail Polish</a></li>  
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="hair.html" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Nails Art
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="nailpowder.html">Nail powder</a></li>
+                  <li><a class="dropdown-item" href="nailkit.html">Nail Art Kit</a></li>
+                  <li><a class="dropdown-item" href="nailgel.html">3D nail Gel</a></li>
+                  <li><a class="dropdown-item" href="nailrhinestones.html">Boxes Nail Rhinestones</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="hair.html" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Jewllery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="necklace.html">Necklace</a></li>
+                  <li><a class="dropdown-item" href="earings.html">Earings</a></li>
+                  <li><a class="dropdown-item" href="braclet.html">Braclet</a></li>
+                  <li><a class="dropdown-item" href="Rings.html">Rings</a></li>
+                </ul>
+              </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="feedback.html">Feedback</a>
+                </li>
+
+              </ul>
+           
+            </div>
+          </div>
+        </nav>
+   <!-- nav end -->
+
+
+<!-- slide -->
+ <div class="container-fluid">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/image/slideh1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image/slideh2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image/slideh3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<!-- End -->
+<br><br><br>
+<div class="marquee">
+  <span>Sales Sales Sales Sales Sales Sales Sales Sales Sales Sales Sales</span>
+</div>
+
+    <!-- card -->
+     <div class="row">
+      <div class="col card-sec">
+    <div class="card" style="width: 18rem;">
+      <img src="assets/image/cardhd1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Huda Nude Foundation Mascara Lipstick
+        </h5>
+        <p class="card-text">₨ 5,400
+        </p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/image/cardhd2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Stila Nars Lipstick Iconic Illuminator
+        </h5>
+        <p class="card-text">₨ 6,000         
+        </p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/image/cardhd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Anastasia Highlighter La Girl Foundation Concealer Brush Powder
+        </h5>
+        <p class="card-text">₨ 4,500 
+        </p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/image/cardhd4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Maybelline foundation concealer powder vivid liquid lipstick
+        </h5>
+        <p class="card-text">₨ 3,850 
+        </p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/image/cardhd5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Benefits Cheek Star Porefessional benetint Huda Obsession Mascara
+        </h5>
+        <p class="card-text">₨ 6,000        
+        </p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    </div>
+    </div>
+     <!-- End -->
+     <br><br><br>
+     <div class="marquee">
+       <span>Sales Sales Sales Sales Sales Sales Sales Sales Sales Sales Sales</span>
+     </div>
+     
+      <br><br><br><br><br>
+
+<div class="pic">
+  <img src="assets/image/home3.jpg" alt="">
+</div>
+
+
+<br><br><br>
+  <footer>
+    <div class="row-footer">
+        <div class="col-footer">
+            <img src="assets/image/logo2.png" class="Logo-img-footer" alt="Logo">
+            <p>At "SIMPLONS-Beauty", we believe that beauty is more than just skin deep. It's about feeling confident, empowered, and comfortable in your own skin. Our mission is to provide high-quality beauty care products that nourish, rejuvenate, and celebrate your natural beauty.</p>
+        </div>
+        <div class="col-footer">
+            <h3>SHOPS <div class="underline"><span></span></div></h3>
+            <address>
+                <p>California</p>
+                <p>Paris, London</p>
+                <p>United Kingdom</p>
+                <li><a href="#">SIMPLONS-Beauty@Gmail.com</a></li>
+                <h4>+92-3133692499</h4>
+            </address>
+        </div>
+        <div class="col-footer">
+            <h3>Links <div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contactus.html">Contact us</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="col-footer"> <!-- Update this div to have 'col-footer' class -->
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"> <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <form action="">
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <p class="text-center">© 2025, SIMPLONS Beauty Care. All rights reserved.</p>
+
+</footer>
+
+
+     <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>
